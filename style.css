@@ -1,0 +1,149 @@
+/* ==========================================
+   RESET E CONFIGURAÇÕES GERAIS
+   ========================================== */
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   }
+   body{
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    padding: 20px;
+   }
+   .container{
+    width: 100%;
+    max-width: 450px;
+   }
+
+   /* ==========================================
+   BARRA DE BUSCA (SEARCH BOX)
+   ========================================== */
+   .search-box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba( 255, 255, 255, 0.2);
+    padding: 10px 15px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+   }
+   .search-box input{
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 1rem;
+   }
+   .search-box input::placeholder{
+    color: rgba( 255, 255, 255, 0.7);
+   }
+   .search-box button {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 8px;
+    border-radius: 50%;
+    transition: backgound 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .search-box button:hover{
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+   }
+   .search-box button:active{
+    transform: scale(0.95);
+   }
+
+   /* ==========================================
+   CARTÃO DO CLIMA (WEATHER CARD)
+   ========================================== */
+   .weather-card{
+    background: rgba( 255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.3);
+   }
+
+   /* Informações da Cidade */
+   .city-info h2{
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+   }
+   .city-info p{
+    font-size: 1rem;
+    color: rgba( 255, 255, 255, 0.8);
+    text-transform: capitalize;/* Deixa a primeira letra maiúscula */
+   }
+
+   /* Caixa de Temperatura e Ícone */
+   .temp-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 25px 0;
+   }
+   .temp-box img{
+    width: 80px;
+    height: 80px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.2));
+   }
+   .temp-box h1{
+    font-size: 3.5rem;
+    font-weight: 700;
+   }
+
+   /* ==========================================
+   GRADE DE DETALHES (UMIDADE E VENTO)
+   ========================================== */
+   .details-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid rgba( 255, 255, 255, 0.2);
+   }
+   .detail-item{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba( 255, 255, 255, 0.5);
+    padding: 12px 15px;
+    border-radius: 12px;
+   }
+   .detail-item i{
+    font-size: 1.5rem;
+    color: rgba( 255, 255, 255, 0.9);
+   }
+   .detail-item div{
+    text-align: left;
+   }
+   .detail-item span{
+    display: block;
+    font-size: 0.8rem;
+    color: rgba( 255, 255, 255, 0.7);
+   }
+   .detail-item p{
+    font-size: 1rem;
+    font-weight: 600;
+   }
