@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de Clima</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Ícones do FontAwesome para o clima -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Barra de Busca -->
+         <header class="search-box">
+            <input type="text" id="cityInput" placeholder="Digite o nome da cidade...">
+            <button id="searchBtn"><i class="fa-solid fa-magnifying-gless"></i></button>
+            <button id="geoBtn" title="Usar minha localização"><i class="fa-solid fa-location-crosshairs"></i></button>
+
+         </header>
+         <!-- Cartão do Clima Atual -->
+          <main class="weather-card">
+            <div class="city-info">
+                <h2 id="cityName">--</h2>
+                <p id="weatherDescription">--</p>
+            </div>
+            <div class="temp-box">
+                <img id="weatherIcon" src="" alt="" style="display: none;">
+                <h1 id="temperature">--°C</h1>
+            </div>
+
+            <!-- Detalhes Extras -->
+             <div class="details-grid">
+                <div class="detail-item">
+                    <i class="fa-solid  fa-droplet"></i>
+                    <div>
+                        <span>Umidade</span>
+                        <p id="humidity">--%</p>
+                    </div>
+                </div>
+                <div class="details-item">
+                    <i class="fa-solid fa-wind"></i>
+                    <div>
+                        <span>Vento</span>
+                        <p id="windSpeed">-- km/h</p>
+                    </div>
+                </div>
+
+             </div>
+
+          </main>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
